@@ -1,5 +1,45 @@
-.idea/
-__pycache__/
+# Virtual Environment
 venv/
-pipenv/
+env/
+
+# Compiled Python Files
+__pycache__/
+*.pyc
+*.pyo
+
+# Database Files
+*.sqlite3
+
+# IDE and Editor Files
+.vscode/
+.idea/
+.pycharm/
+.vim/
+.sublime-project
+.sublime-workspace
+
+# Compiled Assets and Media
+/static/
+/media/
+
+# Logs and Temporary Files
+/logs/
+/tmp/
+
+# User-Generated Content
+/uploads/
+/downloads/
+
+# Compiled Front-End Assets
+/node_modules/
+/build/
+/dist/
+
+# Local Configuration Files
 *.env
+
+# Project-Specific Files (Adjust as needed)
+settings.py
+
+# Ignore everything in the __pycache__ directories
+__pycache__/
