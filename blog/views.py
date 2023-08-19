@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.urls import reverse
 
 
 # Create your views here.
@@ -7,7 +8,7 @@ def starting_page(request):
 
 
 def posts_page(request):
-    return render(request, 'blog/posts-page.html')
+    return render(request, 'blog/posts.html')
 
 
 def post_details(request, post_id):

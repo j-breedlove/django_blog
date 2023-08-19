@@ -1,27 +1,74 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}
-	Jason's Tech Blog
+    Jason's Tech Blog
 {% endblock %}
 
 {% block css_files %}
-<link rel="stylesheet" href="{% static 'blog/index.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
 {% endblock %}
 
 {% block content %}
-<header>
-<h1>Jason's Tech Blog</h1>
-<div>
-<img class="selfie" src="{% static 'blog/web-selfie-2023-.JPG' %}" alt="Jason Breedlove">
-</div>
-</header>
-<div class="blog-container">
-<h3>Exploring the Power of Django for Web Development</h3>
-<div class="blog-post">Discover how Django, the Python web framework, revolutionizes web development. Learn about its admin panel, ORM, and templating engine that streamline development and its ecosystem of reusable apps. Whether you're a beginner or experienced, find out why Django remains a top choice for web projects.</div>
-<h3>Building Interactive Web Applications with Django and JavaScript</h3>
-<div class="blog-post">Combine Django's power with JavaScript to create dynamic user experiences. Explore API development with Django REST framework and build a real-time chat app. Unlock the potential of interactive and engaging web applications by integrating JavaScript libraries like React or Vue.js.</div>
-<h3>Securing Your Django Application: Best Practices for Web Security</h3>
-<div class="blog-post">Protect your Django app from cyber threats. Dive into best practices for authentication, authorization, and guarding against XSS and SQL injection attacks. Leverage Django's security features and third-party libraries to keep user data safe in this era of increasing online vulnerabilities.</div>
-</div>
+    <header id="main-navigation">
+        <h1><a href="">Jason's Tech Blog</a></h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">All Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="welcome">
+        <header>
+            <img class="" src="{% static 'blog/selfie-2023-portrait.png' %}" alt="Jason Breedlove">
+            <h2>Jason's Tech Blog!</h2>
+        </header>
+        <p>Here you'll find articles on web development, programming, and technology.</p>
+    </section>
+    <section id="latest-posts">
+        <h2>Latest Posts</h2>
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Exploring the power of Django">
+                        <div class="post__content">
+                            <h3>Exploring Django</h3>
+                            <p>
+                                Discover how Django, the Python web framework, revolutionizes web development. Learn about
+                                its admin panel, ORM, and templating engine that streamline development and its ecosystem
+                                of reusable apps. Whether you're a beginner or experienced, find out why Django remains a
+                                top choice for web projects.
+                            </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <section id ="about">
+    <h2>What I do</h2>
+    <p>I'm a web developer and software engineer. I love to learn and share my knowledge with others.</p>
+    <p>My goal is to keep on growing as a developer.</p>
+    </section>
+
+    {#    <div class="blog-container">#}
+    {#        <h3>Exploring the Power of Django for Web Development</h3>#}
+    {#        <div class="blog-post">Discover how Django, the Python web framework, revolutionizes web development. Learn#}
+    {#            about its admin panel, ORM, and templating engine that streamline development and its ecosystem of reusable#}
+    {#            apps. Whether you're a beginner or experienced, find out why Django remains a top choice for web projects.#}
+    {#        </div>#}
+    {#        <h3>Building Interactive Web Applications with Django and JavaScript</h3>#}
+    {#        <div class="blog-post">Combine Django's power with JavaScript to create dynamic user experiences. Explore API#}
+    {#            development with Django REST framework and build a real-time chat app. Unlock the potential of interactive#}
+    {#            and engaging web applications by integrating JavaScript libraries like React or Vue.js.#}
+    {#        </div>#}
+    {#        <h3>Securing Your Django Application: Best Practices for Web Security</h3>#}
+    {#        <div class="blog-post">Protect your Django app from cyber threats. Dive into best practices for authentication,#}
+    {#            authorization, and guarding against XSS and SQL injection attacks. Leverage Django's security features and#}
+    {#            third-party libraries to keep user data safe in this era of increasing online vulnerabilities.#}
+    {#        </div>#}
+    {#    </div>#}
 {% endblock %}
-```

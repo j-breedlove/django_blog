@@ -1,57 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    height: 100vh; /* Make sure the container takes up the full viewport height */
-    margin: 0;
-    background-color: whitesmoke;
+#welcome {
+    background: linear-gradient(to right top, #6305dd, #390281);
+    padding: 6rem 12%;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    font-size: 48px;
+#welcome header {
+    display: flex;
+    align-items: flex-start;
+    margin: 3rem auto;
+}
+
+#welcome img {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    object-position: top;
+    border: 5px solid white;
+    border-radius: 12px;
+    background-color: #ffe1bf;
+    transform: rotateZ(-5deg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+#welcome h2 {
+    font-size: 3.5rem;
+    margin: 0 0 0 2rem;
+    color: #e4e4e4;
+    width: 10rem;
+}
+
+#welcome p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#latest-posts {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 60rem;
+    margin: -6rem auto 2rem auto;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.4);
+}
+
+#latest-posts h2 {
     text-align: center;
 }
 
-.blog-container {
+#latest-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    padding: 3px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
 }
 
-.blog-post, h2{
-    font-size: 1.2rem;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 7px;
-    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow to each post */
+#latest-posts li {
+    flex: 1;
 }
 
-h3{
+#about {
+    text-align: center;
+    padding: 3rem;
+    background-color: #e48900;
+    margin-top: 5rem;
+}
+
+#about h2 {
+    font-size: 3rem;
+}
+
+#about p {
     font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 0;
-}
-
-.selfie{
-    width: 200px;
-    height: 350px;
-    max-width: 250px;
-    border-radius: 10%;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 4px 2px 4px rgba(0, 0, 0, 0.1);
+    color: #353535;
 }
